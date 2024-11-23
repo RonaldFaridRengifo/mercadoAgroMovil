@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color de fondo del LinearLayout -->
+    <solid android:color="@color/white" />
+
+    <!-- Definir las esquinas redondeadas -->
+    <corners android:radius="20dp" />
+
+    <!-- Definir el borde (opcional) -->
+    <stroke
+        android:width="2dp"
+        android:color="#5D5D5D" />
+</shape>

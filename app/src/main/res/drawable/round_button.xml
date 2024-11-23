@@ -1,0 +1,18 @@
+<!-- res/drawable/round_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Fondo del botón (color interno del círculo) -->
+    <solid android:color="@color/white"/> <!-- Cambia el color del fondo si lo deseas -->
+
+    <!-- Tamaño del botón -->
+    <size
+        android:width="45dp"
+        android:height="45dp" />
+
+    <!-- Borde verde alrededor del botón -->
+    <stroke
+        android:width="2dp"
+    android:color="@color/green"/> <!-- Color del borde, en este caso verde -->
+
+</shape>

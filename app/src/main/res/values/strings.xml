@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">APP Mercado agroecologico</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="resume1">Únete y contribuye al escalamiento de la agroecología en el Valle de Pubenza.</string>
+    <string name="textoImagen">Presione la imagen para cambiar a una imagen de su dispositivo</string>
+    <string name="resumen">Es una estrategia de comercialización de productos con prácticas agroecológicas cosechados
+        y transformados localmente en los municipios de Popayán, Timbío y Cajibío. Este canal te permitirá la
+        adquisición directa de productos frescos, transformados, artesanales y para el cuidado personal, sin intermediaciones,
+        a precios justos y fortaleciendo el tejido social agroalimentario.</string>
+
+    <string-array name="ubicaciones_array">
+        <item>Seleccionar</item>
+        <item>Popayán</item>
+        <item>Cajibío</item>
+        <item>Timbío</item>
+        <item>Otras</item>
+    </string-array>
+
+    <string name="home_primera_parte">Es una perspectiva integral que articula la ciencia, las organizaciones sociales y
+        la práctica agrícola en la construcción de sistemas agroalimentarios sostenibles.</string>
+
+    <string name="home_segunda_parte">Mercado Agroecológico 4.0 fomenta los principios agroecológicos en la comercialización e intercambio de productos frescos,
+        transformados, artesanales y para el cuidado de la salud.</string>
+
+    <string name="home_tercera_parte">es una perspectiva integral que articula la ciencia, las organizaciones sociales y
+        la práctica agrícola en la construcción de sistemas agroalimentarios sostenibles.</string>
+
+    <string name="vista_principal_fooder1">Unidad de Investigación en Ecología Tropical, INNOVA , TULL (UNICAUCA)</string>
+
+    <string name="home_diversidad">La agroecología propone la diversificación de cultivos y la integración de diferentes especies
+        vegetales y animales para promover la biodiversidad y la salud del suelo.</string>
+
+    <string name="home_creacion">La agroecología promueve la co-creación de conocimientos entre los agricultores, los investigadores
+        y otros actores relevantes para desarrollar soluciones sostenibles y adaptadas a los contextos locales.</string>
+
+    <string name="home_ciclos">La agroecología busca cerrar los ciclos de nutrientes en los sistemas agrícolas, evitando la pérdida
+        de nutrientes y reduciendo la necesidad de insumos externos.</string>
+
+    <string name="home_reciclaje">La agroecología busca optimizar el uso de la energía en los sistemas agrícolas, reduciendo la
+        necesidad de combustibles fósiles y otros insumos energéticos.</string>
+
+    <string name="home_sinergias">La agroecología busca aprovechar las sinergias entre los diferentes elementos del sistema
+        agrícola para mejorar la eficiencia y la resiliencia.</string>
+
+    <string name="home_eficiencia">La agroecología busca optimizar el uso del agua en los sistemas agrícolas, reduciendo la
+        necesidad de riego y aumentando la resiliencia frente a la sequía.</string>
+
+    <string name="home_diseno">La agroecología reconoce que los sistemas agrícolas son complejos y dinámicos, y busca diseñar
+        sistemas que sean capaces de adaptarse y evolucionar en respuesta a los cambios del entorno.</string>
+
+    <string name="home_resiliencia">La agroecología busca promover la resiliencia de los sistemas agrícolas, es decir, su capacidad
+        para resistir y recuperarse de perturbaciones y cambios del entorno.</string>
+
+    <string name="home_participacion">La agroecología busca fomentar la participación y el empoderamiento de los agricultores y las
+        comunidades locales en la toma de decisiones sobre el uso de la tierra y los recursos naturales.</string>
+
+    <string name="home_solidaridad">La agroecología busca promover la solidaridad entre los agricultores y las comunidades locales,
+        y entre las diferentes regiones y países.</string>
+</resources>
