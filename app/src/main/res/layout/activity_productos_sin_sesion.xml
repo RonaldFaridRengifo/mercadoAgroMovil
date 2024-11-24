@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginLeft="12dp"
@@ -14,19 +15,33 @@
         tools:context=".linearLayuot"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="130dp"
-            android:layout_height="65dp"
-            android:src="@drawable/logo_mer_principal"
-            android:layout_gravity="center"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/search"
+            app:endIconContentDescription="Buscar"
+            app:hintTextColor="@color/white"
+            android:layout_margin="11dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:imeOptions="actionSearch"
+                android:background="@drawable/border_linear"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal">
-
-
 
             <ImageButton
                 android:id="@+id/btn_home"
@@ -47,6 +62,15 @@
                 android:layout_marginEnd="10dp"/>
 
             <ImageButton
+                android:id="@+id/btn_config"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/conf"
+                android:background="@drawable/round_button"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <ImageButton
                 android:id="@+id/btn_iniciar_sesion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -55,16 +79,14 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
 
-
             <ImageButton
                 android:id="@+id/btn_cerrar_sesion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/lock_open"
+                android:src="@drawable/exit"
                 android:background="@drawable/round_button"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
-
 
         </LinearLayout>
 
