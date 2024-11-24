@@ -34,8 +34,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/home"
                 android:background="@drawable/round_button"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
 
             <ImageButton
                 android:id="@+id/btn_productos"
@@ -43,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/pear"
                 android:background="@drawable/round_button"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
 
             <ImageButton
                 android:id="@+id/btn_iniciar_sesion"
@@ -52,8 +52,18 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/lock_open"
                 android:background="@drawable/round_button"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"/>
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+
+            <ImageButton
+                android:id="@+id/btn_cerrar_sesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lock_open"
+                android:background="@drawable/round_button"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
 
 
         </LinearLayout>
