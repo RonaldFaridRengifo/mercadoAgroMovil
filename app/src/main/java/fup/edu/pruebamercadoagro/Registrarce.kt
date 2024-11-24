@@ -160,7 +160,7 @@ class Registrarce : AppCompatActivity() {
             edtFechaNac.error = null
         }
 
-        if (spUbicacion.selectedItem.toString() == "Seleccionar") {
+        if (spUbicacion.selectedItem.toString() == "Seleccionar ") {
             Toast.makeText(this, "Seleccione su ubicación", Toast.LENGTH_SHORT).show()
             return false
         }
