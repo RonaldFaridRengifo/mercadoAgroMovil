@@ -12,16 +12,28 @@ import android.app.DatePickerDialog
 import android.content.Intent
 import android.net.Uri
 import android.provider.MediaStore
+import android.text.TextUtils
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import com.google.android.material.textfield.TextInputEditText
 import java.util.Calendar
 
 
 class Registrarce : AppCompatActivity() {
 
     private lateinit var btnRegresar: Button
+    private lateinit var edtNombre: EditText
+    private lateinit var edtApellido: EditText
+    private lateinit var edtCorreo: EditText
+    private lateinit var edtFechaNac: EditText
+    private lateinit var edtTelefono: EditText
+    private lateinit var spUbicacion: Spinner
+    private lateinit var edtUsuario: EditText
+    private lateinit var edtContrasena: TextInputEditText
+    private lateinit var edtContrasenaConf: TextInputEditText
+    private lateinit var btnRegistrarse: Button
 
     private lateinit var imageButton: ImageButton
     private var imageUri: Uri? = null
@@ -44,13 +56,29 @@ class Registrarce : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registrarce)
 
-        val edtFechaNac: EditText = findViewById(R.id.edt_fecha_nac)
+        edtFechaNac = findViewById(R.id.edt_fecha_nac)
+        edtNombre = findViewById(R.id.edt_nombre)
+        edtApellido = findViewById(R.id.edt_apellido)
+        edtCorreo = findViewById(R.id.edt_correo)
+        edtTelefono = findViewById(R.id.edt_telefono)
+        spUbicacion = findViewById(R.id.sp_ubicacion)
+        edtUsuario = findViewById(R.id.edt_usuario)
+        edtContrasena = findViewById(R.id.edt_contrasena)
+        edtContrasenaConf = findViewById(R.id.edt_contrasena_conf)
+        btnRegistrarse = findViewById(R.id.btn_registrarse)
+
+        // Listener del botón Registrarse
+        btnRegistrarse.setOnClickListener {
+            if (validarCampos()) {
+                // Aquí puedes continuar con la lógica para registrar al usuario
+                Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
+            }
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-
         }
 
         imageButton = findViewById(R.id.img_selecionada)
@@ -95,6 +123,75 @@ class Registrarce : AppCompatActivity() {
     private fun openImageSelector() {
         val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
         selectImageLauncher.launch(intent)
+    }
+
+    private fun validarCampos(): Boolean {
+        // Validar que ningún campo esté vacío
+        if (TextUtils.isEmpty(edtNombre.text.toString())) {
+            edtNombre.error = "Ingrese su nombre"
+            return false
+        }
+
+        if (TextUtils.isEmpty(edtApellido.text.toString())) {
+            edtApellido.error = "Ingrese su apellido"
+            return false
+        }
+
+        if (TextUtils.isEmpty(edtCorreo.text.toString())) {
+            edtCorreo.error = "Ingrese su correo"
+            return false
+        }
+
+        if (!android.util.Patterns.EMAIL_ADDRESS.matcher(edtCorreo.text.toString()).matches()) {
+            edtCorreo.error = "Ingrese un correo válido"
+            return false
+        }
+
+        if (TextUtils.isEmpty(edtTelefono.text.toString())) {
+            edtTelefono.error = "Ingrese su teléfono"
+            return false
+        }
+
+        if (TextUtils.isEmpty(edtFechaNac.text.toString())) {
+            edtFechaNac.error = "Seleccione su fecha de nacimiento"
+            return false
+        } else {
+            // Limpiar el error si la fecha ya fue seleccionada
+            edtFechaNac.error = null
+        }
+
+        if (spUbicacion.selectedItem.toString() == "Seleccionar") {
+            Toast.makeText(this, "Seleccione su ubicación", Toast.LENGTH_SHORT).show()
+            return false
+        }
+
+
+        if (TextUtils.isEmpty(edtUsuario.text.toString())) {
+            edtUsuario.error = "Ingrese su número de identificación"
+            return false
+        }
+
+        if (TextUtils.isEmpty(edtContrasena.text.toString())) {
+            edtContrasena.error = "Ingrese una contraseña"
+            return false
+        }
+
+        if (edtContrasena.text.toString().length < 5) {
+            edtContrasena.error = "La contraseña debe tener al menos 4 caracteres"
+            return false
+        }
+
+        if (TextUtils.isEmpty(edtContrasenaConf.text.toString())) {
+            edtContrasenaConf.error = "Confirme su contraseña"
+            return false
+        }
+
+        if (edtContrasena.text.toString() != edtContrasenaConf.text.toString()) {
+            edtContrasenaConf.error = "Las contraseñas no coinciden"
+            return false
+        }
+
+        return true
     }
 
 }
