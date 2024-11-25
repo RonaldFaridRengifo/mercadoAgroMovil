@@ -17,6 +17,30 @@
         <item>Otras</item>
     </string-array>
 
+    <string-array name="unidad_venta_array">
+        <item>Seleccionar</item>
+        <item>Libra</item>
+        <item>Kilogramo</item>
+        <item>Caja</item>
+        <item>Lote</item>
+        <item>Unidad</item>
+        <item>Otra</item>
+    </string-array>
+
+    <string-array name="tipo_venta_array">
+        <item>Venta</item>
+        <item>Venta / Trueque</item>
+        <item>Trueque</item>
+    </string-array>
+
+    <string-array name="categoria_array">
+        <item>Seleccionar</item>
+        <item>Frescos</item>
+        <item>Transformados</item>
+        <item>Artesanales</item>
+        <item>Salud y cuidado personal</item>
+    </string-array>
+
     <string name="home_primera_parte">Es una perspectiva integral que articula la ciencia, las organizaciones sociales y
         la práctica agrícola en la construcción de sistemas agroalimentarios sostenibles.</string>
 

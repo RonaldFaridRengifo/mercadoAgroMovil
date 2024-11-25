@@ -14,12 +14,24 @@
         tools:context=".linearLayuot"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginBottom="40dp"
-            android:src="@drawable/logo_mer_principal"
-            android:layout_gravity="center"/>
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Si desea gestionar su perfil a detalle,lo puede hacer desde el sitio web: "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="www.mercadoagroecologico.org"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -156,63 +168,10 @@
             android:layout_marginBottom="16dp"
             android:inputType="numberDecimal"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Contraseña"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:passwordToggleEnabled="true"
-            app:iconTint="@color/black">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_contrasena"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rect_edittext"
-                android:textSize="16dp"
-                android:fontFamily="serif"
-                android:padding="12dp"
-                android:textColor="#000000"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Confirmar contraseña"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:passwordToggleEnabled="true"
-            app:iconTint="@color/black">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_contrasena_conf"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rect_edittext"
-                android:textSize="16dp"
-                android:fontFamily="serif"
-                android:padding="12dp"
-                android:textColor="#000000"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
-
         <ImageButton
             android:id="@+id/img_selecionada"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/perfil"
             android:background="@drawable/rect_edittext"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"
@@ -233,10 +192,10 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_regresar"
+                android:id="@+id/btn_cancelar"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:text="Regresar"
+                android:text="Cancelar"
                 android:textSize="16dp"
                 android:fontFamily="serif"
                 android:layout_gravity="center"
@@ -245,10 +204,10 @@
                 android:textColor="@color/black"/>
 
             <Button
-                android:id="@+id/btn_registrarse"
+                android:id="@+id/btn_guardar"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:text="@string/registrarse"
+                android:text="Guardar"
                 android:textSize="16dp"
                 android:fontFamily="serif"
                 android:layout_gravity="center"

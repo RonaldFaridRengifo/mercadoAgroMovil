@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PruebaMercadoAgro"
         tools:targetApi="31">
         <activity
+            android:name=".ConfigurarPerfil"
+            android:exported="false" />
+        <activity
+            android:name=".SubirProductos"
+            android:exported="false" />
+        <activity
             android:name=".ProductosSinSesion"
             android:exported="false" />
         <activity

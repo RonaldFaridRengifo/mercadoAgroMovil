@@ -14,218 +14,152 @@
         tools:context=".linearLayuot"
         android:orientation="vertical">
 
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_marginBottom="40dp"
-            android:src="@drawable/logo_mer_principal"
-            android:layout_gravity="center"/>
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Si desea gestionar sus productos lo puede
+            hacer desde el apartado web: "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="www.mercadoagroecologico.org"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16dp"
             android:fontFamily="serif"
-            android:text="Nombre (personal o de empresa)"/>
-
-        <EditText
-            android:id="@+id/edt_nombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rect_edittext"
-            android:padding="12dp"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:textColorHint="#9E9E9E"
-            android:textColor="#000000"
-            android:layout_marginBottom="16dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Apellido"/>
-
-        <EditText
-            android:id="@+id/edt_apellido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rect_edittext"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:padding="12dp"
-            android:textColorHint="#9E9E9E"
-            android:textColor="#000000"
-            android:layout_marginBottom="16dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Correo"/>
-
-        <EditText
-            android:id="@+id/edt_correo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rect_edittext"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:padding="12dp"
-            android:textColorHint="#9E9E9E"
-            android:textColor="#000000"
-            android:layout_marginBottom="16dp"
-            android:inputType="textEmailAddress"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Telefono"/>
-
-        <EditText
-            android:id="@+id/edt_telefono"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rect_edittext"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:padding="12dp"
-            android:textColorHint="#9E9E9E"
-            android:textColor="#000000"
-            android:layout_marginBottom="16dp"
-            android:inputType="numberDecimal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Fecha de nacimiento"/>
-
-        <EditText
-            android:id="@+id/edt_fecha_nac"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Seleccionar fecha"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:focusable="false"
-            android:clickable="true"
-            android:background="@drawable/rect_edittext"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Ubicación"/>
-
-        <Spinner
-            android:id="@+id/sp_ubicacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rect_edittext"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Número de identificación (este es su usuario)"/>
-
-        <EditText
-            android:id="@+id/edt_usuario"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rect_edittext"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:padding="12dp"
-            android:textColorHint="#9E9E9E"
-            android:textColor="#000000"
-            android:layout_marginBottom="16dp"
-            android:inputType="numberDecimal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Contraseña"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:passwordToggleEnabled="true"
-            app:iconTint="@color/black">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_contrasena"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rect_edittext"
-                android:textSize="16dp"
-                android:fontFamily="serif"
-                android:padding="12dp"
-                android:textColor="#000000"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:fontFamily="serif"
-            android:text="Confirmar contraseña"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:passwordToggleEnabled="true"
-            app:iconTint="@color/black">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_contrasena_conf"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rect_edittext"
-                android:textSize="16dp"
-                android:fontFamily="serif"
-                android:padding="12dp"
-                android:textColor="#000000"
-                android:inputType="textPassword" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:text="Eliga una imagen de su dispositivo:"/>
 
         <ImageButton
-            android:id="@+id/img_selecionada"
+            android:id="@+id/img_producto"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/perfil"
             android:background="@drawable/rect_edittext"
             android:scaleType="fitCenter"
             android:adjustViewBounds="true"
             android:layout_gravity="center"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:text="Nombre"/>
+
+        <EditText
+            android:id="@+id/edt_nombre_prod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_edittext"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:padding="12dp"
+            android:textColorHint="#9E9E9E"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
             android:fontFamily="serif"
-            android:text="@string/textoImagen"
-            android:gravity="center"/>
+            android:text="Unidad de venta:"/>
+
+        <Spinner
+            android:id="@+id/sp_unidadVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_edittext"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:text="Tipo de venta:"/>
+
+        <Spinner
+            android:id="@+id/sp_tipoVenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_edittext"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:padding="12dp"
+
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:text="Pecio: (COP)"/>
+
+        <EditText
+            android:id="@+id/edt_precio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_edittext"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:padding="12dp"
+            android:textColorHint="#9E9E9E"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:text="Descripción"/>
+
+        <EditText
+            android:id="@+id/edt_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_edittext"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:padding="12dp"
+            android:textColorHint="#9E9E9E"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:text="Categoria:"/>
+
+        <Spinner
+            android:id="@+id/sp_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_edittext"
+            android:textSize="16dp"
+            android:fontFamily="serif"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -233,10 +167,10 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_regresar"
+                android:id="@+id/btn_cancelar"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:text="Regresar"
+                android:text="Cancelar"
                 android:textSize="16dp"
                 android:fontFamily="serif"
                 android:layout_gravity="center"
@@ -245,10 +179,10 @@
                 android:textColor="@color/black"/>
 
             <Button
-                android:id="@+id/btn_registrarse"
+                android:id="@+id/btn_guardar"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:text="@string/registrarse"
+                android:text="Guardar"
                 android:textSize="16dp"
                 android:fontFamily="serif"
                 android:layout_gravity="center"

@@ -49,8 +49,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/home"
                 android:background="@drawable/round_button"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
 
             <ImageButton
                 android:id="@+id/btn_productos"
@@ -58,8 +58,17 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/pear"
                 android:background="@drawable/round_button"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_agregar_producto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_pear"
+                android:background="@drawable/round_button"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
 
             <ImageButton
                 android:id="@+id/btn_config"
@@ -67,8 +76,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/conf"
                 android:background="@drawable/round_button"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
 
             <ImageButton
                 android:id="@+id/btn_iniciar_sesion"
@@ -76,8 +85,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/lock_open"
                 android:background="@drawable/round_button"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
 
             <ImageButton
                 android:id="@+id/btn_cerrar_sesion"
@@ -85,8 +94,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/exit"
                 android:background="@drawable/round_button"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
 
         </LinearLayout>
 
